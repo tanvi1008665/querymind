@@ -14,8 +14,8 @@ def my_output(query):
 
 #### UI Development using streamlit 
 
-st.set_page_config(page_title="Summer_C_BOT")
-st.header("Summer_C_BOT") 
+st.set_page_config(page_title="QueryMind")
+st.header("🤖 QueryMind – Your AI Assistant") 
 input = st.text_input("Input " , key = "input")  
 submit = st.button("Ask your query") 
 
