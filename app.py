@@ -52,6 +52,8 @@ st.header("🤖 QueryMind – Your AI Assistant")
 input = st.text_input("Input " , key = "input")  
 submit = st.button("Ask your query") 
 
+create_table()
+
 if submit :
     response = my_output(input) 
     st.subheader("The Response is=")
