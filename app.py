@@ -3,6 +3,7 @@ load_dotenv()
 import streamlit as st 
 import os 
 import google.generativeai as genai 
+import psycopg2
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
@@ -55,6 +56,7 @@ submit = st.button("Ask your query")
 create_table()
 
 if submit :
-    response = my_output(input) 
+    response = my_output(input)
+    log_query(input,response) 
     st.subheader("The Response is=")
     st.write(response)
